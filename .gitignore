@@ -1,0 +1,37 @@
+# Environments
+venv/
+.venv/
+venv311/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Large Datasets & Raw Data
+data/raw/
+*.nii
+*.nii.gz
+*.csv
+
+# Model Weights & large ML Artifacts
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.pkl

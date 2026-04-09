@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-700 rounded-full;
+  }
+
+  /* Remove number input spin buttons so users just type the data */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-2xl shadow-card;
+  }
+
+  .card-hover {
+    @apply hover:border-primary-700 hover:shadow-glow transition-all duration-300;
+  }
+
+  .badge-low {
+    @apply bg-emerald-500/10 text-emerald-400 border border-emerald-500/20;
+  }
+  .badge-moderate {
+    @apply bg-amber-500/10 text-amber-400 border border-amber-500/20;
+  }
+  .badge-high {
+    @apply bg-rose-500/10 text-rose-400 border border-rose-500/20;
+  }
+
+  .input-field {
+    @apply w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100
+           placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-500 text-white font-semibold px-5 py-2.5 rounded-xl
+           transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-primary-600/30;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-5 py-2.5 rounded-xl
+           border border-slate-700 transition-all duration-200 flex items-center gap-2;
+  }
+
+  .section-title {
+    @apply text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3;
+  }
+
+  .risk-label-low      { @apply text-emerald-400; }
+  .risk-label-moderate { @apply text-amber-400; }
+  .risk-label-high     { @apply text-rose-400; }
+
+  .nav-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200
+           text-slate-400 hover:text-white hover:bg-slate-800/80 cursor-pointer;
+  }
+  .nav-link-active {
+    @apply text-white bg-primary-600/20 border border-primary-600/30;
+  }
+}
+
+/* Animated twin-state pulse ring */
+@keyframes ring-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50%       { transform: scale(1.08); opacity: 0.9; }
+}
+.twin-ring { animation: ring-pulse 2.4s ease-in-out infinite; }
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

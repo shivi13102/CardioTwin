@@ -1,0 +1,122 @@
+[
+  {
+    "modality": "EHR",
+    "title": "EHR Disease Class Distribution",
+    "path": "/visualization/ehr/ehr_class_distribution.png",
+    "description": "Shows how samples are distributed across severity categories."
+  },
+  {
+    "modality": "EHR",
+    "title": "Distribution of Key EHR Features",
+    "path": "/visualization/ehr/ehr_histogram_kde.png",
+    "description": "Distribution of fundamental clinical biomarkers."
+  },
+  {
+    "modality": "EHR",
+    "title": "EHR Feature Variation Across Disease Classes",
+    "path": "/visualization/ehr/ehr_violin_plot.png",
+    "description": "Illustrates how important biomarkers vary across disease burden."
+  },
+  {
+    "modality": "EHR",
+    "title": "Age vs ST Depression by Disease Class",
+    "path": "/visualization/ehr/ehr_scatter.png",
+    "description": "Scatter relationship between age and exertion-induced ischemia proxy."
+  },
+  {
+    "modality": "EHR",
+    "title": "PCA Projection of EHR Samples",
+    "path": "/visualization/ehr/ehr_projection.png",
+    "description": "Visualizes whether samples separate in lower-dimensional feature space."
+  },
+  {
+    "modality": "ECG",
+    "title": "ECG Severity Group Distribution",
+    "path": "/visualization/ecg/ecg_class_distribution.png",
+    "description": "Shows how samples are distributed across severity categories."
+  },
+  {
+    "modality": "ECG",
+    "title": "Distribution of Key ECG Features",
+    "path": "/visualization/ecg/ecg_histogram_kde.png",
+    "description": "Distribution of electrophysiological metrics."
+  },
+  {
+    "modality": "ECG",
+    "title": "ECG Feature Variation Across Severity Groups",
+    "path": "/visualization/ecg/ecg_violin_plot.png",
+    "description": "Illustrates how important biomarkers vary across disease burden."
+  },
+  {
+    "modality": "ECG",
+    "title": "LF/HF Ratio vs ECG Abnormality Score",
+    "path": "/visualization/ecg/ecg_scatter.png",
+    "description": "Sympathovagal balance vs global temporal signal distortion."
+  },
+  {
+    "modality": "ECG",
+    "title": "PCA Projection of ECG Samples",
+    "path": "/visualization/ecg/ecg_projection.png",
+    "description": "Visualizes whether samples separate in lower-dimensional feature space."
+  },
+  {
+    "modality": "MRI",
+    "title": "MRI Severity Group Distribution",
+    "path": "/visualization/mri/mri_class_distribution.png",
+    "description": "Shows how samples are distributed across severity categories."
+  },
+  {
+    "modality": "MRI",
+    "title": "Distribution of Key MRI Features",
+    "path": "/visualization/mri/mri_histogram_kde.png",
+    "description": "Distribution of cardiac structural and textural quantifications."
+  },
+  {
+    "modality": "MRI",
+    "title": "MRI Feature Variation Across Severity Groups",
+    "path": "/visualization/mri/mri_violin_plot.png",
+    "description": "Illustrates how important biomarkers vary across disease burden."
+  },
+  {
+    "modality": "MRI",
+    "title": "Heart Area vs MRI Severity Score",
+    "path": "/visualization/mri/mri_scatter.png",
+    "description": "Structural dilation proxy plotted against continuous severity formulation."
+  },
+  {
+    "modality": "MRI",
+    "title": "PCA Projection of MRI Samples",
+    "path": "/visualization/mri/mri_projection.png",
+    "description": "Visualizes whether samples separate in lower-dimensional feature space."
+  },
+  {
+    "modality": "Multimodal",
+    "title": "Severity Distribution Across Modalities",
+    "path": "/visualization/multimodal/multimodal_class_comparison.png",
+    "description": "Compare distributions of raw label classes per isolated modality."
+  },
+  {
+    "modality": "Multimodal",
+    "title": "Distribution of Representative Multimodal Features",
+    "path": "/visualization/multimodal/multimodal_histogram_kde.png",
+    "description": "Cross-modality feature distributions."
+  },
+  {
+    "modality": "Multimodal",
+    "title": "Prototype Multimodal Feature Variation",
+    "path": "/visualization/multimodal/multimodal_violin_plot.png",
+    "description": "Illustrates how important biomarkers vary across disease burden."
+  },
+  {
+    "modality": "Multimodal",
+    "title": "ECG Instability vs MRI Structural Burden",
+    "path": "/visualization/multimodal/multimodal_scatter.png",
+    "description": "Highlights cross-feature relationships associated with structural or electrophysiological burden."
+  },
+  {
+    "modality": "Multimodal",
+    "title": "Projection of Prototype Multimodal Feature Space",
+    "path": "/visualization/multimodal/multimodal_projection.png",
+    "description": "Visualizes whether samples separate in lower-dimensional feature space."
+  }
+]
